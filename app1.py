@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 
 def fetch_poster(movie_id):
-    api_key = "b48b7ce60dcd7a7ec5913d459152bb1f"
+    api_key = "enter your api key"
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US"
     response = requests.get(url)
     if response.status_code == 200:
